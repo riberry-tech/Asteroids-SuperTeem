@@ -274,6 +274,9 @@ export default function App() {
               <button className="btn ghost" onClick={showScores}>
                 High scores
               </button>
+              <a className="btn ghost" href="./?mp=1&role=host">
+                Crew (local)
+              </a>
             </div>
           </div>
         </div>

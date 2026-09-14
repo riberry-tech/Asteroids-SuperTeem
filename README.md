@@ -9,7 +9,17 @@ npm install
 npm run dev
 ```
 
-## Controls
+## Crew (local multiplayer)
+
+Same origin, two tabs. Host authority. Shared 5 lives (extras at 10k). No friendly fire.
+
+```
+/?mp=1&role=host
+/?mp=1&role=player&room=local
+```
+
+Menu has a Crew (local) button. TeemCare Channel wiring is documented in `docs/channel-asteroids-adapter.md`.
+
 
 - `A` / `D` or arrows: rotate
 - `W` or up: thrust

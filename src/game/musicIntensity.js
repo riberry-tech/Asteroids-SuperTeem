@@ -1,3 +1,5 @@
+import { wrapDist } from './wrap.js'
+
 /**
  * musicIntensity (0–1) from danger signals, with attack/release smoothing
  * so layers do not flicker between calm / moderate / tense.
@@ -19,19 +21,7 @@ function clamp01(n) {
   return Math.min(1, Math.max(0, n))
 }
 
-export function wrapDelta(a, b, size) {
-  let d = a - b
-  const half = size * 0.5
-  if (d > half) d -= size
-  if (d < -half) d += size
-  return d
-}
-
-export function wrapDist(a, b, w, h) {
-  const dx = wrapDelta(a.x, b.x, w)
-  const dy = wrapDelta(a.y, b.y, h)
-  return Math.hypot(dx, dy)
-}
+export { wrapDelta, wrapDist } from './wrap.js'
 
 export function computeRawIntensity(game) {
   const { w, h, asteroids, ship, ufo, ufoBullets, lives, mode } = game

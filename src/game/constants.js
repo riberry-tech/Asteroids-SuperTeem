@@ -1,3 +1,14 @@
+export const WORLD_W = 1920
+export const WORLD_H = 1080
+export const MAX_PLAYERS = 4
+export const MAX_FOV_W = 1200
+export const MAX_FOV_H = 800
+export const CAM_DEADZONE = 90
+export const CAM_FOLLOW = 7.5
+export const SNAPSHOT_HZ = 20
+
+export const SHIP_COLORS = ['#eaf6ff', '#7dffd4', '#ffd27a', '#c9a7ff']
+
 export const FIRE_COOLDOWN = 1
 export const BULLET_SPEED = 560
 export const BULLET_LIFETIME = 1.02

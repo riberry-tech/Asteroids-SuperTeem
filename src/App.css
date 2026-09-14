@@ -277,6 +277,11 @@
 }
 
 .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
   pointer-events: auto;
   cursor: pointer;
   border: 1px solid var(--hud);
